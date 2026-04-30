@@ -70,6 +70,21 @@ export function MovingPictures({ images, reverse = false }: { images: string[]; 
 export function ContactChooser() {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    if (!open) {
+      return;
+    }
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [open]);
+
   return (
     <div className="contact-widget">
       <button className="contact-trigger" type="button" onClick={() => setOpen((value) => !value)} aria-expanded={open}>
@@ -84,15 +99,22 @@ export function ContactChooser() {
             exit={{ opacity: 0, y: 10, scale: 0.96 }}
             transition={{ duration: 0.22 }}
           >
-            <p>Choose a number</p>
+            <div className="contact-popover-head">
+              <p>Choose a number</p>
+              <button type="button" onClick={() => setOpen(false)} aria-label="Close contact options">
+                Close
+              </button>
+            </div>
             {contacts.map((contact) => (
               <div className="contact-choice" key={contact.tel}>
                 <strong>{contact.label}</strong>
                 <span>
-                  <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noreferrer">
+                  <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
                     WhatsApp
                   </a>
-                  <a href={`tel:${contact.tel}`}>Call</a>
+                  <a href={`tel:${contact.tel}`} onClick={() => setOpen(false)}>
+                    Call
+                  </a>
                 </span>
               </div>
             ))}

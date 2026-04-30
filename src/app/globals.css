@@ -578,12 +578,32 @@ video {
   right: 0;
 }
 
-.contact-popover p {
+.contact-popover-head {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.contact-popover-head p {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.14em;
-  margin: 0 0 14px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.contact-popover-head button {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  padding: 8px 10px;
   text-transform: uppercase;
 }
 
