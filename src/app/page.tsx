@@ -1,9 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MovingPictures, Reveal } from "./motion-layer";
 import { images } from "./site-data";
 import { SiteFooter, SiteHeader } from "./site-shell";
 
-const partyPics = [images[3], images[10], images[13], images[0], images[15], images[18], images[9], images[17], images[7], images[11], images[14], images[16]];
+const partyPics = [
+  images[3],
+  images[10],
+  images[13],
+  images[0],
+  images[15],
+  images[18],
+  images[9],
+  images[17],
+  images[7],
+  images[11],
+  images[14],
+  images[16],
+  images[1],
+  images[2],
+  images[4],
+  images[5],
+  images[6],
+  images[8],
+  images[12],
+];
 
 const featureSections = [
   {
@@ -42,8 +63,10 @@ export default function Home() {
       <SiteHeader />
 
       <section className="home-hero">
-        <Image src={images[9]} alt="Inkindi decor Kigali event stage with lighting" fill priority sizes="100vw" />
-        <div className="hero-card">
+        <video className="hero-video" autoPlay muted loop playsInline poster={images[9]}>
+          <source src="/assets/videos/moment-05.mp4" type="video/mp4" />
+        </video>
+        <Reveal className="hero-card">
           <p>Party Planner Rwanda</p>
           <h1>Inkindi decor Kigali</h1>
           <span>
@@ -53,21 +76,23 @@ export default function Home() {
             <Link href="/contact">Get in touch</Link>
             <Link href="/private-events/kigali">Plan an event</Link>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       <section className="who-section">
-        <div>
+        <Reveal>
           <p className="small-heading">Who are we?</p>
           <h2>We bring the occasion. You bring the people.</h2>
-        </div>
-        <div>
+        </Reveal>
+        <Reveal>
           <p>
             Inkindi decor Kigali is a Kigali-based event company with creativity, production discipline, and guest experience at the heart of every brief. Our clients are not just throwing a party or booking a room. Together, we create lasting memories that live in the minds of guests long after the music ends.
           </p>
           <Link className="outline-link" href="/about">Get to know us</Link>
-        </div>
+        </Reveal>
       </section>
+
+      <MovingPictures images={[images[10], images[15], images[18], images[3], images[13], images[0], images[11]]} />
 
       <section className="callout-strip">
         <Link href="/contact">Get in touch</Link>
@@ -95,11 +120,11 @@ export default function Home() {
       <section className="feature-list">
         {featureSections.map((section, index) => (
           <article className="feature-row" key={section.title}>
-            <div className="feature-copy">
+            <Reveal className="feature-copy">
               <h2>{section.title}</h2>
               <p>{section.body}</p>
               <Link href={section.href}>Find out more</Link>
-            </div>
+            </Reveal>
             <Image src={section.image} alt={section.title} width={1100} height={820} sizes="(max-width: 900px) 100vw, 50vw" />
             {index === 1 ? (
               <div className="mini-stack">
@@ -131,6 +156,8 @@ export default function Home() {
           </blockquote>
         </div>
       </section>
+
+      <MovingPictures images={[images[1], images[4], images[6], images[8], images[12], images[14], images[16]]} reverse />
 
       <section className="inspiration-section">
         <p className="small-heading">Get inspired</p>

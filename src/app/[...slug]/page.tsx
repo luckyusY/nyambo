@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MovingPictures, Reveal } from "../motion-layer";
 import { images, pageContent } from "../site-data";
 import { SiteFooter, SiteHeader } from "../site-shell";
 
@@ -40,25 +41,30 @@ export default async function ContentPage({ params }: Props) {
 
       <section className="sub-hero">
         <Image src={page.image} alt={page.title} fill priority sizes="100vw" />
-        <div>
+        <Reveal>
           <p>{page.kicker}</p>
           <h1>{page.title}</h1>
           <span>{page.hero}</span>
-        </div>
+        </Reveal>
       </section>
 
       <section className="sub-intro">
-        <p className="small-heading">{page.kicker}</p>
-        <h2>{page.intro}</h2>
-        <div>
+        <Reveal className="sub-intro-label">
+          <p className="small-heading">{page.kicker}</p>
+          <Image src={page.image} alt={`${page.title} detail`} width={460} height={600} sizes="(max-width: 900px) 100vw, 26vw" />
+        </Reveal>
+        <Reveal className="sub-intro-copy">
+          <h2>{page.intro}</h2>
           {page.body.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
-        </div>
+        </Reveal>
       </section>
 
+      <MovingPictures images={[images[3], images[10], images[13], images[0], images[15], images[18], images[9]]} />
+
       <section className="sub-gallery">
-        {[images[1], images[10], images[13], images[15], images[18], images[7]].map((src) => (
+        {[images[1], images[10], images[13], images[15], images[18], images[7], images[2], images[4], images[8]].map((src) => (
           <Image key={src} src={src} alt="Inkindi decor Kigali event detail" width={900} height={900} sizes="(max-width: 700px) 50vw, 33vw" />
         ))}
       </section>

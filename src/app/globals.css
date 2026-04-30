@@ -162,10 +162,18 @@ video {
 }
 
 .home-hero img,
+.hero-video,
 .sub-hero img {
+  height: 100%;
   object-fit: cover;
   object-position: center;
+  position: absolute;
+  width: 100%;
   z-index: 0;
+}
+
+.hero-video {
+  inset: 0;
 }
 
 .home-hero::after,
@@ -190,6 +198,10 @@ video {
   position: absolute;
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.82);
   z-index: 2;
+}
+
+.hero-card > div {
+  display: contents;
 }
 
 .hero-card p,
@@ -257,8 +269,8 @@ video {
 .who-section {
   display: grid;
   gap: clamp(34px, 6vw, 90px);
-  grid-template-columns: 0.9fr 1.1fr;
-  padding: clamp(72px, 10vw, 145px) clamp(22px, 7vw, 104px);
+  grid-template-columns: minmax(240px, 0.65fr) 1fr;
+  padding: clamp(62px, 8vw, 112px) clamp(22px, 7vw, 104px);
 }
 
 .who-section h2,
@@ -272,10 +284,10 @@ video {
 
 .who-section h2,
 .sub-intro h2 {
-  font-size: clamp(2.35rem, 5.6vw, 5.6rem);
+  font-size: clamp(2.15rem, 4.4vw, 4.55rem);
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 0.92;
+  line-height: 0.98;
   margin: 0;
 }
 
@@ -301,6 +313,26 @@ video {
   padding: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.moving-pictures {
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  overflow: hidden;
+  padding: 18px 0;
+}
+
+.moving-track {
+  display: flex;
+  gap: 18px;
+  width: max-content;
+}
+
+.moving-track img {
+  aspect-ratio: 0.82 / 1;
+  height: clamp(210px, 27vw, 390px);
+  object-fit: cover;
+  width: auto;
 }
 
 .callout-strip span {
@@ -458,6 +490,10 @@ video {
   z-index: 2;
 }
 
+.sub-hero > div > div {
+  display: contents;
+}
+
 .sub-hero h1 {
   font-size: clamp(2.9rem, 7.5vw, 7.8rem);
   max-width: 1050px;
@@ -466,15 +502,35 @@ video {
 .sub-intro {
   align-items: start;
   display: grid;
-  gap: 36px;
-  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(24px, 5vw, 72px);
+  grid-template-columns: minmax(220px, 0.42fr) 1fr;
   padding: clamp(58px, 8vw, 104px) clamp(22px, 7vw, 104px);
+}
+
+.sub-intro-label {
+  position: sticky;
+  top: 110px;
+}
+
+.sub-intro-label img {
+  aspect-ratio: 0.9 / 1;
+  margin-top: 26px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.sub-intro-copy {
+  max-width: 820px;
+}
+
+.sub-intro-copy p {
+  max-width: 680px;
 }
 
 .sub-gallery {
   display: grid;
   gap: 12px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   padding: 0 clamp(12px, 3vw, 34px) clamp(72px, 10vw, 130px);
 }
 
@@ -487,6 +543,75 @@ video {
 .sub-gallery img:nth-child(1),
 .sub-gallery img:nth-child(4) {
   grid-column: span 2;
+}
+
+.contact-widget {
+  bottom: 22px;
+  position: fixed;
+  right: 22px;
+  z-index: 90;
+}
+
+.contact-trigger {
+  background: var(--green);
+  border: 1px solid rgba(255, 249, 239, 0.5);
+  color: var(--paper);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  padding: 14px 18px;
+  text-transform: uppercase;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
+.contact-popover {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  bottom: 58px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+  color: var(--ink);
+  min-width: 290px;
+  padding: 18px;
+  position: absolute;
+  right: 0;
+}
+
+.contact-popover p {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.contact-choice {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 10px;
+  padding: 14px 0 0;
+}
+
+.contact-choice + .contact-choice {
+  margin-top: 14px;
+}
+
+.contact-choice span {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-choice a {
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .process-section {
@@ -586,6 +711,10 @@ video {
   .inspiration-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .sub-intro-label {
+    position: static;
+  }
 }
 
 @media (max-width: 620px) {
@@ -630,5 +759,16 @@ video {
   .inspiration-grid,
   .mini-stack {
     grid-template-columns: 1fr;
+  }
+
+  .contact-widget {
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+  }
+
+  .contact-trigger,
+  .contact-popover {
+    width: 100%;
   }
 }
