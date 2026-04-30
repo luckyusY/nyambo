@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nyambo | Event Design & Production in Rwanda",
+  title: "Inkindi decor Kigali | Event Design & Production in Rwanda",
   description:
-    "Nyambo is a Kigali-based event design and production company crafting refined weddings, corporate galas, and private celebrations across Rwanda.",
+    "Inkindi decor Kigali is a Kigali-based event design and production company crafting refined weddings, corporate galas, and private celebrations across Rwanda.",
 };
 
 export default function RootLayout({

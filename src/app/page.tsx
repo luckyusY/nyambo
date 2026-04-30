@@ -11,7 +11,7 @@ const featureSections = [
     href: "/corporate/corporate-events",
     image: images[9],
     body:
-      "In a connected world of teams, partners, and clients, nothing replaces the energy of a beautifully run room. Nyambo plans launches, conferences, dinners, and staff celebrations with polished production and warm hospitality.",
+      "In a connected world of teams, partners, and clients, nothing replaces the energy of a beautifully run room. Inkindi decor Kigali plans launches, conferences, dinners, and staff celebrations with polished production and warm hospitality.",
   },
   {
     title: "Luxury Private Events",
@@ -32,7 +32,7 @@ const featureSections = [
     href: "/private-events/weddings",
     image: images[15],
     body:
-      "Nyambo weddings are about the feeling in the room: meaningful ceremony, beautiful flow, considered styling, and a team quietly managing every detail.",
+      "Inkindi decor Kigali weddings are about the feeling in the room: meaningful ceremony, beautiful flow, considered styling, and a team quietly managing every detail.",
   },
 ];
 
@@ -42,10 +42,10 @@ export default function Home() {
       <SiteHeader />
 
       <section className="home-hero">
-        <Image src={images[9]} alt="Nyambo event stage with lighting" fill priority sizes="100vw" />
+        <Image src={images[9]} alt="Inkindi decor Kigali event stage with lighting" fill priority sizes="100vw" />
         <div className="hero-card">
           <p>Party Planner Rwanda</p>
-          <h1>Nyambo</h1>
+          <h1>Inkindi decor Kigali</h1>
           <span>
             An event planning and production company in Rwanda creating private parties, weddings, corporate gatherings, and immersive celebrations with bespoke styling, technical production, and memorable hospitality.
           </span>
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
         <div>
           <p>
-            Nyambo is a Kigali-based event company with creativity, production discipline, and guest experience at the heart of every brief. Our clients are not just throwing a party or booking a room. Together, we create lasting memories that live in the minds of guests long after the music ends.
+            Inkindi decor Kigali is a Kigali-based event company with creativity, production discipline, and guest experience at the heart of every brief. Our clients are not just throwing a party or booking a room. Together, we create lasting memories that live in the minds of guests long after the music ends.
           </p>
           <Link className="outline-link" href="/about">Get to know us</Link>
         </div>
@@ -82,7 +82,7 @@ export default function Home() {
               key={src}
               className={`pic-${index % 5}`}
               src={src}
-              alt="Nyambo event production"
+              alt="Inkindi decor Kigali event production"
               width={900}
               height={900}
               sizes="(max-width: 700px) 50vw, 25vw"
@@ -103,8 +103,8 @@ export default function Home() {
             <Image src={section.image} alt={section.title} width={1100} height={820} sizes="(max-width: 900px) 100vw, 50vw" />
             {index === 1 ? (
               <div className="mini-stack">
-                <Image src={images[2]} alt="Nyambo detail" width={500} height={760} />
-                <Image src={images[4]} alt="Nyambo lighting detail" width={500} height={760} />
+                <Image src={images[2]} alt="Inkindi decor Kigali detail" width={500} height={760} />
+                <Image src={images[4]} alt="Inkindi decor Kigali lighting detail" width={500} height={760} />
               </div>
             ) : null}
           </article>
@@ -116,7 +116,7 @@ export default function Home() {
         <div className="reviews-grid">
           <blockquote>
             <Image src={images[8]} alt="Gala setup" width={600} height={400} />
-            <p>Nyambo created the most beautiful evening for our family. The room, timing, and details were all handled with real care.</p>
+            <p>Inkindi decor Kigali created the most beautiful evening for our family. The room, timing, and details were all handled with real care.</p>
             <cite>Private client</cite>
           </blockquote>
           <blockquote>

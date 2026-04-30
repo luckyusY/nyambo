@@ -58,9 +58,10 @@ video {
 
 .brand {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 3.5vw, 3.7rem);
+  font-size: clamp(1.05rem, 2vw, 2.2rem);
   letter-spacing: 0;
-  line-height: 0.9;
+  line-height: 1;
+  max-width: min(48vw, 440px);
   text-transform: uppercase;
 }
 
@@ -193,10 +194,10 @@ video {
 .hero-card h1,
 .sub-hero h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(5.5rem, 17vw, 15rem);
+  font-size: clamp(3rem, 9vw, 9rem);
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 0.78;
+  line-height: 0.88;
   margin: 0 0 22px;
   text-transform: uppercase;
 }
@@ -495,8 +496,8 @@ video {
 
 .footer-brand {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.6rem, 10vw, 9rem);
-  line-height: 0.82;
+  font-size: clamp(2.4rem, 7vw, 7rem);
+  line-height: 0.9;
   text-transform: uppercase;
 }
 
@@ -556,7 +557,8 @@ video {
   }
 
   .brand {
-    font-size: 2.25rem;
+    font-size: 1.1rem;
+    max-width: 68vw;
   }
 
   .home-hero,

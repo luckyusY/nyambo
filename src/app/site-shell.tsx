@@ -10,8 +10,8 @@ export function SiteHeader() {
   return (
     <>
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Nyambo home">
-          Nyambo
+        <Link className="brand" href="/" aria-label="Inkindi decor Kigali home">
+          Inkindi decor Kigali
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <Link href="/about">Story</Link>
@@ -52,11 +52,11 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="footer" id="contact">
-      <div className="footer-brand">Nyambo</div>
+      <div className="footer-brand">Inkindi decor Kigali</div>
       <div>
         <h2>Get in touch</h2>
         <p>Phone: +250 780 000 000</p>
-        <p>E-mail: hello@nyambo.rw</p>
+        <p>E-mail: hello@inkindidecorkigali.rw</p>
         <p>Kigali, Rwanda</p>
       </div>
       <div>

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${page.title} | Nyambo`,
+    title: `${page.title} | Inkindi decor Kigali`,
     description: page.intro,
   };
 }
@@ -59,7 +59,7 @@ export default async function ContentPage({ params }: Props) {
 
       <section className="sub-gallery">
         {[images[1], images[10], images[13], images[15], images[18], images[7]].map((src) => (
-          <Image key={src} src={src} alt="Nyambo event detail" width={900} height={900} sizes="(max-width: 700px) 50vw, 33vw" />
+          <Image key={src} src={src} alt="Inkindi decor Kigali event detail" width={900} height={900} sizes="(max-width: 700px) 50vw, 33vw" />
         ))}
       </section>
 
@@ -79,7 +79,7 @@ export default async function ContentPage({ params }: Props) {
           <article>
             <span>03</span>
             <h2>Delivery</h2>
-            <p>On event day, Nyambo manages setup, suppliers, guest flow, stage cues, troubleshooting, and final breakdown.</p>
+            <p>On event day, Inkindi decor Kigali manages setup, suppliers, guest flow, stage cues, troubleshooting, and final breakdown.</p>
           </article>
         </div>
       </section>

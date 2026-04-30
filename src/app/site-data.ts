@@ -24,7 +24,7 @@ export const menuGroups = [
     ],
   },
   {
-    title: "Nyambo",
+    title: "Inkindi decor Kigali",
     links: [
       ["Venues", "/venues"],
       ["About", "/about"],
@@ -51,7 +51,7 @@ export const pageContent: Record<
     kicker: "Private Events",
     hero: "Elegant private celebrations in the heart of Rwanda.",
     intro:
-      "Nyambo plans birthdays, introductions, family dinners, and milestone evenings with a polished Kigali sensibility.",
+      "Inkindi decor Kigali plans birthdays, introductions, family dinners, and milestone evenings with a polished Kigali sensibility.",
     body: [
       "We shape every layer of the guest experience, from venue flow and tablescape to entertainment, lighting, sound, catering direction, and final production cues.",
       "Our process is calm, collaborative, and detail-led, giving hosts the freedom to enjoy the night while the room moves exactly as planned.",
@@ -75,7 +75,7 @@ export const pageContent: Record<
     kicker: "Weddings",
     hero: "Weddings with atmosphere, grace, and a clear plan.",
     intro:
-      "Nyambo designs wedding days that balance cultural meaning, modern production, and the joy of bringing people together.",
+      "Inkindi decor Kigali designs wedding days that balance cultural meaning, modern production, and the joy of bringing people together.",
     body: [
       "We help couples refine their vision, build the right supplier team, and choreograph the day so every transition feels natural.",
       "Florals, stage design, ceremony spaces, lighting, guest seating, and reception flow are handled as one connected experience.",
@@ -99,7 +99,7 @@ export const pageContent: Record<
     kicker: "Birthdays",
     hero: "A celebration with polish, sentiment, and scale.",
     intro:
-      "For 50th birthdays, Nyambo blends personal storytelling with refined styling and confident event management.",
+      "For 50th birthdays, Inkindi decor Kigali blends personal storytelling with refined styling and confident event management.",
     body: [
       "We can design seated dinners, cocktail celebrations, family-led evenings, or high-energy parties for hundreds of guests.",
       "The work is bespoke: guest arrival, stage moments, menus, florals, lighting, music, and the details that make the night feel personal.",
@@ -113,7 +113,7 @@ export const pageContent: Record<
     intro:
       "We create 60th birthday events that honor the guest of honor while keeping the room joyful and effortless.",
     body: [
-      "From intimate family dinners to large formal receptions, Nyambo coordinates the planning, styling, hospitality, and on-site running.",
+      "From intimate family dinners to large formal receptions, Inkindi decor Kigali coordinates the planning, styling, hospitality, and on-site running.",
       "Our team keeps the pace comfortable, the details refined, and the celebration full of life.",
     ],
     image: images[15],
@@ -123,7 +123,7 @@ export const pageContent: Record<
     kicker: "Private Events",
     hero: "Original party worlds, built from first impression to final song.",
     intro:
-      "Nyambo creates theme-led celebrations with custom entrances, stage moments, florals, bars, entertainment, and lighting.",
+      "Inkindi decor Kigali creates theme-led celebrations with custom entrances, stage moments, florals, bars, entertainment, and lighting.",
     body: [
       "A strong theme should feel immersive without feeling forced. We keep the concept sharp and the guest journey easy.",
       "Our production approach makes each visual choice, supplier, and timeline decision serve the feeling of the night.",
@@ -137,7 +137,7 @@ export const pageContent: Record<
     intro:
       "We plan launches, conferences, staff parties, award nights, and gala dinners for teams that need a polished guest experience.",
     body: [
-      "Nyambo handles production schedules, room layout, stage design, audiovisual suppliers, guest registration, catering flow, and protocol-sensitive details.",
+      "Inkindi decor Kigali handles production schedules, room layout, stage design, audiovisual suppliers, guest registration, catering flow, and protocol-sensitive details.",
       "The experience can be understated or spectacular, but the delivery is always organized and calm.",
     ],
     image: images[8],
@@ -147,7 +147,7 @@ export const pageContent: Record<
     kicker: "Corporate",
     hero: "End-of-year gatherings that feel fresh, generous, and easy to attend.",
     intro:
-      "Nyambo creates festive staff events, client dinners, and appreciation nights with strong styling and smooth production.",
+      "Inkindi decor Kigali creates festive staff events, client dinners, and appreciation nights with strong styling and smooth production.",
     body: [
       "We can build a full seasonal concept or refine a simple brief into a room that feels celebratory and on-brand.",
       "Entertainment, food, lighting, speeches, transport, and guest flow are all coordinated through one plan.",
@@ -162,16 +162,16 @@ export const pageContent: Record<
       "We help clients choose, transform, and produce events in Rwanda's hotels, gardens, halls, private homes, and outdoor spaces.",
     body: [
       "Venue selection is more than capacity. We look at guest arrival, production access, acoustics, power, catering flow, weather, photography, and how the space will feel after dark.",
-      "Nyambo then designs the room around the venue's strengths, turning constraints into atmosphere.",
+      "Inkindi decor Kigali then designs the room around the venue's strengths, turning constraints into atmosphere.",
     ],
     image: images[12],
   },
   about: {
-    title: "About Nyambo",
+    title: "About Inkindi decor Kigali",
     kicker: "Who Are We?",
     hero: "A Rwanda event team built around creative detail and steady delivery.",
     intro:
-      "Nyambo is based in Kigali and works with clients who want events to feel considered, generous, and memorable.",
+      "Inkindi decor Kigali is based in Kigali and works with clients who want events to feel considered, generous, and memorable.",
     body: [
       "We are planners, stylists, coordinators, and production partners. Our role is to listen carefully, shape a clear idea, and then manage the many moving parts that make the idea real.",
       "The best events feel effortless to guests. Behind that ease is planning, timing, hospitality, and a team that knows how to keep the room moving.",
@@ -181,7 +181,7 @@ export const pageContent: Record<
   "case-studies": {
     title: "Case Studies",
     kicker: "Get Inspired",
-    hero: "Recent event stories from Nyambo productions.",
+    hero: "Recent event stories from Inkindi decor Kigali productions.",
     intro:
       "Explore how a brief becomes a guest journey, from first concept to final room reveal.",
     body: [
@@ -191,26 +191,26 @@ export const pageContent: Record<
     image: images[1],
   },
   blog: {
-    title: "Nyambo Journal",
+    title: "Inkindi decor Kigali Journal",
     kicker: "Get Inspired",
     hero: "Ideas for planning events in Rwanda.",
     intro:
       "A practical journal for hosts thinking about venues, themes, production, guest comfort, and memorable details.",
     body: [
       "Start with what guests should feel when they arrive. Then make every choice support that: the entrance, the table, the light, the music, the pace, and the final goodbye.",
-      "Nyambo shares planning notes for couples, families, and companies preparing events across Rwanda.",
+      "Inkindi decor Kigali shares planning notes for couples, families, and companies preparing events across Rwanda.",
     ],
     image: images[5],
   },
   contact: {
-    title: "Contact Nyambo",
+    title: "Contact Inkindi decor Kigali",
     kicker: "Get In Touch",
     hero: "Tell us the date, the place, and the feeling.",
     intro:
       "For weddings, private parties, corporate events, and venue transformations, start with a short note.",
     body: [
       "Phone: +250 780 000 000",
-      "Email: hello@nyambo.rw",
+      "Email: hello@inkindidecorkigali.rw",
       "Location: Kigali, Rwanda",
     ],
     image: images[16],
