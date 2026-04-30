@@ -71,7 +71,7 @@ export default function Home() {
 
       <section className="callout-strip">
         <Link href="/contact">Get in touch</Link>
-        <span>Call us anytime on: +250 780 000 000</span>
+        <span>Call us anytime on: +250 789 448 107 / +250 788 720 326</span>
       </section>
 
       <section className="pics-section">

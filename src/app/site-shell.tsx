@@ -55,7 +55,8 @@ export function SiteFooter() {
       <div className="footer-brand">Inkindi decor Kigali</div>
       <div>
         <h2>Get in touch</h2>
-        <p>Phone: +250 780 000 000</p>
+        <p>Phone: +250 789 448 107</p>
+        <p>Phone: +250 788 720 326</p>
         <p>E-mail: hello@inkindidecorkigali.rw</p>
         <p>Kigali, Rwanda</p>
       </div>

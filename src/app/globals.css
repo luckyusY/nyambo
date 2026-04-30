@@ -45,11 +45,12 @@ video {
 
 .site-header {
   align-items: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0));
   color: #fff;
   display: flex;
   justify-content: space-between;
   left: 0;
-  padding: 22px clamp(18px, 4vw, 58px);
+  padding: 24px clamp(18px, 4vw, 58px) 42px;
   position: fixed;
   right: 0;
   top: 0;
@@ -58,10 +59,12 @@ video {
 
 .brand {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.05rem, 2vw, 2.2rem);
-  letter-spacing: 0;
+  font-size: clamp(1rem, 1.7vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
   line-height: 1;
-  max-width: min(48vw, 440px);
+  max-width: min(42vw, 390px);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.72);
   text-transform: uppercase;
 }
 
@@ -76,7 +79,7 @@ video {
 
 .desktop-nav a,
 .menu-button {
-  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.24);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.72);
 }
 
 .menu-button {
@@ -161,12 +164,15 @@ video {
 .home-hero img,
 .sub-hero img {
   object-fit: cover;
+  object-position: center;
   z-index: 0;
 }
 
 .home-hero::after,
 .sub-hero::after {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.14) 52%, rgba(0, 0, 0, 0.42));
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.18) 32%, rgba(0, 0, 0, 0.62)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.34) 54%, rgba(0, 0, 0, 0.5));
   content: "";
   inset: 0;
   position: absolute;
@@ -174,11 +180,15 @@ video {
 }
 
 .hero-card {
-  bottom: clamp(48px, 9vw, 110px);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.08));
+  border-left: 3px solid rgba(255, 255, 255, 0.72);
+  bottom: clamp(42px, 7vw, 88px);
   color: #fff;
   left: clamp(24px, 7vw, 96px);
-  max-width: 720px;
+  max-width: min(760px, 82vw);
+  padding: clamp(18px, 3vw, 34px) clamp(18px, 4vw, 42px);
   position: absolute;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.82);
   z-index: 2;
 }
 
@@ -194,7 +204,7 @@ video {
 .hero-card h1,
 .sub-hero h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3rem, 9vw, 9rem);
+  font-size: clamp(2.7rem, 7vw, 7.4rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 0.88;
@@ -206,7 +216,8 @@ video {
 .sub-hero span {
   display: block;
   font-size: clamp(1.05rem, 1.8vw, 1.28rem);
-  line-height: 1.7;
+  font-weight: 600;
+  line-height: 1.62;
   max-width: 660px;
 }
 
@@ -233,6 +244,16 @@ video {
   text-transform: uppercase;
 }
 
+.hero-actions a {
+  background: rgba(0, 0, 0, 0.24);
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.hero-actions a:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
 .who-section {
   display: grid;
   gap: clamp(34px, 6vw, 90px);
@@ -251,7 +272,7 @@ video {
 
 .who-section h2,
 .sub-intro h2 {
-  font-size: clamp(3rem, 8vw, 7.5rem);
+  font-size: clamp(2.35rem, 5.6vw, 5.6rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 0.92;
@@ -298,9 +319,9 @@ video {
   display: grid;
   gap: 16px;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(6, 1fr);
-  margin: 38px auto;
-  max-width: 1320px;
+  grid-template-columns: repeat(8, 1fr);
+  margin: 38px auto 0;
+  max-width: 1480px;
 }
 
 .picture-wall img {
@@ -312,13 +333,18 @@ video {
 
 .picture-wall .pic-0,
 .picture-wall .pic-3 {
-  grid-column: span 2;
+  grid-column: span 3;
   grid-row: span 2;
 }
 
 .picture-wall .pic-1,
 .picture-wall .pic-4 {
   aspect-ratio: 1 / 1.45;
+  grid-column: span 2;
+}
+
+.picture-wall .pic-2 {
+  grid-column: span 2;
 }
 
 .feature-list {
@@ -420,36 +446,47 @@ video {
 }
 
 .sub-hero > div {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.04));
+  border-left: 3px solid rgba(255, 255, 255, 0.7);
   color: #fff;
-  max-width: 980px;
-  padding: 0 clamp(24px, 7vw, 96px) clamp(54px, 9vw, 116px);
+  margin-left: clamp(24px, 7vw, 96px);
+  max-width: min(980px, 84vw);
+  padding: clamp(18px, 3vw, 32px) clamp(18px, 4vw, 42px);
+  margin-bottom: clamp(42px, 7vw, 88px);
   position: relative;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.82);
   z-index: 2;
 }
 
 .sub-hero h1 {
-  font-size: clamp(3.7rem, 10vw, 10rem);
+  font-size: clamp(2.9rem, 7.5vw, 7.8rem);
   max-width: 1050px;
 }
 
 .sub-intro {
+  align-items: start;
   display: grid;
   gap: 36px;
-  grid-template-columns: 1fr 0.9fr;
-  padding: clamp(72px, 10vw, 140px) clamp(22px, 7vw, 104px);
+  grid-template-columns: 0.9fr 1.1fr;
+  padding: clamp(58px, 8vw, 104px) clamp(22px, 7vw, 104px);
 }
 
 .sub-gallery {
   display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 clamp(18px, 4vw, 54px) clamp(72px, 10vw, 130px);
+  gap: 12px;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0 clamp(12px, 3vw, 34px) clamp(72px, 10vw, 130px);
 }
 
 .sub-gallery img {
-  aspect-ratio: 1 / 1.12;
+  aspect-ratio: 1 / 1.05;
   object-fit: cover;
   width: 100%;
+}
+
+.sub-gallery img:nth-child(1),
+.sub-gallery img:nth-child(4) {
+  grid-column: span 2;
 }
 
 .process-section {
@@ -568,13 +605,14 @@ video {
 
   .home-hero::after,
   .sub-hero::after {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.74));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.8));
   }
 
   .hero-card {
     bottom: 34px;
     left: 20px;
     right: 20px;
+    max-width: none;
   }
 
   .picture-wall {

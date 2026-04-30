@@ -209,7 +209,8 @@ export const pageContent: Record<
     intro:
       "For weddings, private parties, corporate events, and venue transformations, start with a short note.",
     body: [
-      "Phone: +250 780 000 000",
+      "Phone: +250 789 448 107",
+      "Phone: +250 788 720 326",
       "Email: hello@inkindidecorkigali.rw",
       "Location: Kigali, Rwanda",
     ],
